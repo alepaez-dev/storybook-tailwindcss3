@@ -1,36 +1,40 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "fredoka-one";
+  src: url("./assets/fonts/Fredoka_One/FredokaOne-Regular.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "montserrat-regular";
+  src: url("./assets/fonts/Montserrat/Montserrat-Regular.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "montserrat-medium";
+  src: url("./assets/fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
 }
 
-.App-logo {
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@layer base {
+  .fredoka {
+    font-family: "fredoka-one";
+  }
+  .montse-rg {
+    font-family: "montserrat-regular";
+  }
+  .montse-md {
+    font-family: "montserrat-medium";
   }
 }
-
-.App-header {
-  /* background-color: #282c34; */
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  font-family: "montserrat-medium";
+  margin: 0;
+  color: #96969f;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
