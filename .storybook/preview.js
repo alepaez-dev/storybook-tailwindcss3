@@ -1,8 +1,8 @@
 // asi ya no tenemos que importar el tailwind css en cada historia
-import 'App.css'
+import "App.css";
 
 export const parameters = {
-  actions: { argTypesRegex: '^on[A-Z].*' },
+  actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
     matchers: {
       color: /(background|color)$/i,
